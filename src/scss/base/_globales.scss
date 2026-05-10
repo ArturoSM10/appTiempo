@@ -15,7 +15,7 @@ body {
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
     line-height: 1.2;
-    background-color: v.$blanco;
+    background-image: linear-gradient(to right,v.$primario, v.$secundario);
 }
 
 [class*="__titulo"] {
