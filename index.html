@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
+    <link rel="stylesheet" href="./dist/css/spinner.css">
     <link rel="stylesheet" href="./dist/css/style.css">
+
 </head>
 <body>
-    
+    <main class="main">
+        <h1 class="main__title">Busca el clima</h1>
+        <div class="main__spin">
+            <p class="main__p">Agrega tu cuidad y país, el resultado se mostrará aquí</p>
+            <div class="sk-circle">
+                <div class="sk-circle1 sk-child"></div>
+                <div class="sk-circle2 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle3 sk-child"></div>
+                <div class="sk-circle4 sk-child"></div>
+                <div class="sk-circle5 sk-child"></div>
+                <div class="sk-circle6 sk-child"></div>
+                <div class="sk-circle7 sk-child"></div>
+                <div class="sk-circle8 sk-child"></div>
+                <div class="sk-circle9 sk-child"></div>
+                <div class="sk-circle10 sk-child"></div>
+                <div class="sk-circle11 sk-child"></div>
+                <div class="sk-circle12 sk-child"></div>
+            </div>
+        </div>
+        <div class="main__resultados">
+
+        </div>
+        <form class="form">
+            <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu ciudad">
+            <select name="pais" id="pais">
+                <option value="" selected disabled>--Seleccione--</option>
+                <option value="" >--Seleccione--</option>
+                <option value="argentina">Argentina</option>
+                <option value="colombia">Colombia</option>
+                <option value="costa rica">Costa rica</option>
+                <option value="espana">España</option>
+                <option value="estados unidos">Estados Unidos</option>
+                <option value="mexico">México</option>
+                <option value="peru">Perú</option>
+            </select>
+            <input type="submit" value="Obtener clima">
+        </form>
+        <p class="alert correcto"><span>Error!</span> Todos los campos son obligatorios</p>
+    </main>
     <script src="./dist/js/app.js"></script>
 </body>
 </html>
